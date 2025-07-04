@@ -165,13 +165,13 @@ export default function Home() {
 
           <Card className="border-2 lg:border-4 p-0 mx-3 lg:mx-6 xl:mx-8 rounded-none border-black bg-[#FFC67C] shadow-neo">
             <CardContent className="px-2 lg:px-4 xl:px-20 py-0 lg:py-4 xl:py-6 flex items-center gap-4 lg:gap-6 xl:gap-8">
-              {/* <Image
+              <Image
                 src={"/Group 48096005.png"}
                 alt=""
                 width={270}
                 className="w-20 lg:w-28 xl:w-56 -translate-y-1"
                 height={50}
-              /> */}
+              />
               <div className="flex-1 text-right">
                 <h3 className="font-bold text-black text-sm lg:text-4xl xl:text-6xl">
                   Select NFT
@@ -197,25 +197,25 @@ export default function Home() {
                   metadata for rarity.
                 </p>
               </div>
-              {/* <Image
+              <Image
                 src={"/Group 48096003.png"}
                 alt=""
                 width={270}
                 className="w-20 lg:w-28 xl:w-56"
                 height={50}
-              /> */}
+              />
             </CardContent>
           </Card>
 
           <Card className="border-2 lg:border-4 py-0 lg:py-4 xl:py-6 mx-3 lg:mx-6 xl:mx-8 rounded-none border-black bg-[#FFC67C] shadow-neo">
             <CardContent className="px-2 lg:px-4 xl:px-20 py-1 lg:py-3 xl:py-5 flex items-center gap-4 lg:gap-6 xl:gap-8">
-              {/* <Image
+              <Image
                 src={"/Group 48096004.png"}
                 alt=""
                 width={270}
                 className="w-20 lg:w-28 xl:w-56"
                 height={50}
-              /> */}
+              />
               <div className="flex-1 text-right">
                 <h3 className="font-bold text-black text-sm lg:text-4xl xl:text-6xl">
                   Earn Points
