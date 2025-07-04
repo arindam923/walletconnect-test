@@ -6,8 +6,10 @@ import { cn, racing, spicy } from "@/lib/utils";
 import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { useWalletRedirect } from "@/hooks/useWalletRedirect";
 
 export default function Home() {
+  useWalletRedirect();
   return (
     <div>
       <ErrorBoundary>
@@ -124,7 +126,7 @@ export default function Home() {
           className="mb-4 absolute z-[-1] w-full md:w-[95%] -translate-x-1/2 left-1/2"
         />
         <div className="space-y-2.5 lg:space-y-4 xl:space-y-14 w-full pt-4 lg:pt-8 xl:pt-24 z-10 relative max-w-[1250px] mx-auto md:mb-40">
-          <Image
+          {/* <Image
             src={"/12.png"}
             alt=""
             width={350}
@@ -137,7 +139,7 @@ export default function Home() {
             width={350}
             height={100}
             className="mb-4 absolute -translate-y-full top-8 lg:top-12 xl:top-16 -left-9 lg:-left-16 xl:-left-20 z-[1] w-36 md:w-38 lg:w-64 xl:w-[500px]"
-          />
+          /> */}
 
           <Card className="border-2 lg:border-4 p-0 mx-3 lg:mx-6 xl:mx-8 rounded-none border-black bg-[#FFC67C] shadow-neo">
             <CardContent className="px-2 lg:px-4 xl:px-20 py-0 lg:py-4 xl:py-6 flex items-center gap-4 lg:gap-6 xl:gap-8">
