@@ -5,8 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { cn, racing, spicy } from "@/lib/utils";
 import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useWalletRedirect } from "@/hooks/useWalletRedirect";
 
 export default function Home() {
+  useWalletRedirect();
   return (
     <div>
       <Header />

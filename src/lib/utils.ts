@@ -2,6 +2,7 @@ import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { Poppins, Racing_Sans_One, Spicy_Rice } from "next/font/google";
 
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -22,3 +23,6 @@ const spicy = Spicy_Rice({
 });
 
 export { poppins, racing, spicy };
+
+
+

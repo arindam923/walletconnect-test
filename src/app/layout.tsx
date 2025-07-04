@@ -23,7 +23,6 @@ export default function RootLayout({
         )}
       >
         <RainbowKitProviderWrapper>
-          {" "}
           <div className="mx-auto min-h-screen bg-[#FFC882] relative overflow-hidden">
             {children}
             <Footer />
