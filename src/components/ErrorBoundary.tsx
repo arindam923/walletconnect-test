@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = { children: React.ReactNode };
-type State = { hasError: boolean; error: any };
+type State = { hasError: boolean; error: unknown };
 
 export class ErrorBoundary extends React.Component<Props, State> {
   constructor(props: Props) {
@@ -9,11 +9,11 @@ export class ErrorBoundary extends React.Component<Props, State> {
     this.state = { hasError: false, error: null };
   }
 
-  static getDerivedStateFromError(error: any) {
+  static getDerivedStateFromError(error: unknown): State {
     return { hasError: true, error };
   }
 
-  componentDidCatch(error: any, errorInfo: any) {
+  componentDidCatch(error: unknown, errorInfo: React.ErrorInfo) {
     // You can log error to an error reporting service here
     console.error("ErrorBoundary caught an error", error, errorInfo);
   }
@@ -23,7 +23,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
       return (
         <div style={{ color: "red", padding: 16 }}>
           <h2>Something went wrong.</h2>
-          <pre>{this.state.error?.toString()}</pre>
+          <pre>{String(this.state.error)}</pre>
         </div>
       );
     }
