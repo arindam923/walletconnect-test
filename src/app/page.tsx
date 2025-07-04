@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
 
 export default function Home() {
+  const { address, isConnected } = useAccount();
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -12,6 +16,12 @@ export default function Home() {
           height={38}
           priority
         />
+        <ConnectButton />
+        {isConnected && (
+          <div className="mt-2 text-green-600 font-mono text-sm">
+            Connected: {address}
+          </div>
+        )}
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
