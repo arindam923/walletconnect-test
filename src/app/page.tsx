@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
       </ErrorBoundary>
 
-      {/* <Image
+      <Image
         src={"/bg1.png"}
         alt=""
         width={600}
@@ -29,19 +29,19 @@ export default function Home() {
         width={600}
         height={100}
         className="absolute top-[330px] md:top-[1150px] left-0 w-full object-cover"
-      /> */}
+      />
 
       {/* Main Content */}
       <div className="relative z-10 p-6 lg:p-12 xl:p-16">
         {/* Welcome Banner */}
         <div className="relative mb-20 lg:mb-32 xl:mb-40 md:min-h-[400px]">
-          {/* <Image
+          <Image
             src={"/Group 48096007.png"}
             alt=""
             width={1000}
             height={600}
             className="absolute -top-8 lg:-top-12 xl:-top-32 w-full px-10 lg:px-12 xl:px-16 max-w-4xl left-1/2 -translate-x-1/2"
-          /> */}
+          />
 
           <div className="text-center relative z-10 mt-6 lg:mt-12 xl:mt-16 flex flex-col items-center">
             <h1
@@ -126,7 +126,7 @@ export default function Home() {
           className="mb-4 absolute z-[-1] w-full md:w-[95%] -translate-x-1/2 left-1/2"
         />
         <div className="space-y-2.5 lg:space-y-4 xl:space-y-14 w-full pt-4 lg:pt-8 xl:pt-24 z-10 relative max-w-[1250px] mx-auto md:mb-40">
-          {/* <Image
+          <Image
             src={"/12.png"}
             alt=""
             width={350}
@@ -139,7 +139,7 @@ export default function Home() {
             width={350}
             height={100}
             className="mb-4 absolute -translate-y-full top-8 lg:top-12 xl:top-16 -left-9 lg:-left-16 xl:-left-20 z-[1] w-36 md:w-38 lg:w-64 xl:w-[500px]"
-          /> */}
+          />
 
           <Card className="border-2 lg:border-4 p-0 mx-3 lg:mx-6 xl:mx-8 rounded-none border-black bg-[#FFC67C] shadow-neo">
             <CardContent className="px-2 lg:px-4 xl:px-20 py-0 lg:py-4 xl:py-6 flex items-center gap-4 lg:gap-6 xl:gap-8">
@@ -153,13 +153,13 @@ export default function Home() {
                   access your NFT collection.
                 </p>
               </div>
-              {/* <Image
+              <Image
                 src={"/Untitled-1 1.png"}
                 alt=""
                 width={270}
                 className="w-20 lg:w-28 xl:w-56"
                 height={50}
-              /> */}
+              />
             </CardContent>
           </Card>
 
