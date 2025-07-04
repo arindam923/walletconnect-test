@@ -13,5 +13,5 @@ export const config = getDefaultConfig({
   transports: {
     [bsc.id]: http(),
   },
-  ssr: true,
+  ssr: false,
 });
