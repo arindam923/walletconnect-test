@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
       </ErrorBoundary>
 
-      <Image
+      {/* <Image
         src={"/bg1.png"}
         alt=""
         width={600}
@@ -29,7 +29,7 @@ export default function Home() {
         width={600}
         height={100}
         className="absolute top-[330px] md:top-[1150px] left-0 w-full object-cover"
-      />
+      /> */}
 
       {/* Main Content */}
       <div className="relative z-10 p-6 lg:p-12 xl:p-16">
